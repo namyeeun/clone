@@ -1,0 +1,306 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  letter-spacing: -1px;
+  font-family: "Pretendard-Regular";
+}
+.Simg::before,
+.Simg::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/sp_com.png) no-repeat;
+  background-size: 800px 800px;
+}
+.inner {
+  margin: auto;
+  width: 1180px;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  padding-top: 14px;
+  background-color: #fff;
+}
+.logo {
+  float: left;
+  margin-left: 50px;
+}
+.logo a::after {
+  width: 140px;
+  height: 55px;
+}
+.gnb {
+  position: absolute;
+  top: 31px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb li {
+  float: left;
+  font-size: 18px;
+}
+.gnb li ~ li {
+  padding-left: 60px;
+}
+.fr {
+  float: right;
+  margin: 15px 45px;
+}
+.fr > li {
+  float: left;
+  font-size: 14px;
+  padding-left: 9px;
+}
+.fr > li ~ li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 7px;
+  background: #ccc;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+
+.navi {
+  width: 100%;
+  border: solid #e5e5e5;
+  border-width: 1px 0;
+}
+.navi .inner {
+  position: relative;
+  height: 48px;
+}
+.navi .Simg::after {
+  margin-top: 15px;
+  padding-left: 22px;
+  width: 16px;
+  height: 15px;
+  background-position: -15px -76px;
+}
+.navi select {
+  position: absolute;
+  top: 0;
+  height: 48px;
+  padding: 10px 20px;
+  border: solid #e5e5e5;
+}
+.customer_service select {
+  left: 38px;
+  width: 155px;
+  border-width: 0 1px;
+}
+.store_locator select {
+  left: 193px;
+  width: 200px;
+  border-width: 0 1px 0 0;
+}
+main {
+  position: relative;
+}
+form {
+  margin-top: 140px;
+}
+fieldset {
+  height: 286px;
+  padding: 53px 40px;
+  background-color: #f4f4f4;
+}
+legend {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 34px;
+  color: #2d5b79;
+  font-weight: 500;
+  margin: 56px 0;
+}
+fieldset label {
+  display: inline-block;
+  width: 104px;
+}
+fieldset select {
+  width: 200px;
+  height: 45px;
+  margin-right: 8px;
+  padding: 0 16px;
+  border: 1px solid #e5e5e5;
+}
+.location {
+  margin: 20px 0;
+}
+.etc {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d5b79;
+}
+.city {
+  margin-right: 13px;
+}
+.srch .srchBox {
+  width: 415px;
+  height: 45px;
+  padding-left: 16px;
+  margin-right: 28px;
+  border: 1px solid #2d5b79;
+}
+.srch .srchBtn {
+  width: 200px;
+  height: 45px;
+  color: #fff;
+  background-color: #368932;
+  cursor: pointer;
+}
+
+.result {
+  padding: 44px 0 20px;
+  font-size: 14px;
+}
+.list {
+  width: 575px;
+  border-top: 3px solid #2d5b79;
+  margin-bottom: 368px;
+}
+.list li {
+  border-bottom: 2px solid #e5e5e5;
+  padding: 28px 30px;
+}
+.list a {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.list a::before {
+  margin-right: 9px;
+  width: 15px;
+  height: 21px;
+  background-position: -490px -112px;
+}
+.list a:hover {
+  text-decoration: underline;
+}
+.list a:hover::before {
+  background-position: -516px -112px;
+}
+.items {
+  margin: 18px 0;
+  font-size: 14px;
+  color: #929292;
+}
+.list dl {
+  margin-bottom: 5px;
+}
+.list dt,
+.list dd {
+  display: inline;
+}
+.list dt {
+  margin-right: 9px;
+}
+.info {
+  margin-top: 30px;
+}
+.info p:nth-child(2) {
+  margin: 8px 0;
+}
+.contents {
+  position: relative;
+}
+.map {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+footer {
+  height: 227px;
+  color: #fff;
+  background-color: #212121;
+}
+.footer {
+  height: 227px;
+  position: relative;
+}
+.flogo {
+  display: inline;
+}
+.flogo::after {
+  margin-top: 40px;
+  width: 130px;
+  height: 50px;
+  background-position: -150px 0;
+}
+address {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  height: 227px;
+  padding: 40px 60px;
+  font-size: 14px;
+  color: #999;
+  border-left: 1px solid #4d4d4d;
+  border-right: 1px solid #4d4d4d;
+}
+address p {
+  margin-bottom: 20px;
+}
+address p small {
+  display: block;
+  margin-bottom: 7px;
+}
+address .line span:hover {
+  text-decoration: underline;
+}
+address .line > span ~ span {
+  margin-left: 10px;
+}
+address .line > span ~ span::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #999;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+footer .fr {
+  float: right;
+  margin: 40px 120px 0 0;
+}
+.sns li:first-child a::after {
+  width: 29px;
+  height: 22px;
+  margin-top: 3px;
+  background-position: -321px -642px;
+}
+.sns li:nth-child(2) a::after {
+  width: 30px;
+  height: 30px;
+  background-position: -351px -638px;
+}
+.sns li {
+  float: left;
+  padding-right: 20px;
+}
+.sns li:last-child a::after {
+  width: 28px;
+  height: 28px;
+  margin-top: 1px;
+  background-position: -381px -639px;
+}
+.footer button {
+  width: 200px;
+  height: 45px;
+  padding: 10px 20px;
+  margin-top: 70px;
+  text-align: left;
+}
